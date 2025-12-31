@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "sparkentic",
+  "version": "1.0.0",
+  "description": "SPARKENTIC - Production-Ready AI Agents with Pydantic AI",
+  "keywords": [
+    "pydantic-ai",
+    "ai-agents",
+    "python",
+    "production-ready",
+    "structured-output",
+    "claude-code",
+    "sparkentic",
+    "testing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaodnascimento/sparkentic.git"
+  },
+  "license": "MIT",
+  "author": "Joao D Nascimento",
+  "main": "index.js",
+  "bin": {
+    "sparkentic": "tools/sparkentic-cli.js",
+    "spk": "tools/sparkentic-cli.js"
+  },
+  "scripts": {
+    "postinstall": "node tools/postinstall.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

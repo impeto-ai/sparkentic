@@ -1,0 +1,42 @@
+# SPARKENTIC Configuration
+# Production-Ready AI Agents with Pydantic AI
+
+version: 1.0.0
+slashPrefix: sparkentic
+
+# Agent output locations
+agent:
+  designLocation: docs/agent-design.md
+  sourceLocation: src
+  testsLocation: tests
+  toolsLocation: src/tools
+  depsLocation: src/deps.py
+  schemasLocation: src/schemas.py
+
+# Deploy configuration
+deploy:
+  platform: docker  # docker | railway | modal
+  configLocation: Dockerfile
+
+# Pydantic AI defaults
+pydantic_ai:
+  runtime: python
+  model: openai:gpt-4o
+  output_type: structured  # structured | text
+  deps_injection: true
+  testing: pytest
+
+# Testing configuration
+testing:
+  framework: pytest
+  mock_model: TestModel
+  block_real_requests: true
+  fixtures: conftest.py
+
+# Dev preferences
+codeStyle:
+  comments: verbose           # Explain the "why" not just "what"
+  variableNames: descriptive  # Prefer clarity over brevity
+  typeAnnotations: always     # Pydantic models everywhere
+  errorHandling: explicit     # ModelRetry for recoverable errors
+  asyncFirst: true           # async/await by default
