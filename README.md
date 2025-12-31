@@ -244,4 +244,4 @@ MIT
 
 Based on [SPARK Method](https://github.com/joaodnascimento/spark-method) - LangGraph TypeScript agents.
 
-Built for the Pydantic AI ecosystem by [@joaodnascimento](https://github.com/joaodnascimento).
+Built for the Pydantic AI ecosystem by [@impeto-ai](https://github.com/impeto-ai).
